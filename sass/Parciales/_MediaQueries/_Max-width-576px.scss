@@ -1,0 +1,426 @@
+/*---------------------------------------------------------
+                    MEDIA SCREEN 576px
+----------------------------------------------------------*/
+
+@media screen and (max-width: 576px) {
+
+/*------------------------
+          MENNU
+------------------------*/
+
+.navegacion {
+    background-color:chocolate; 
+    height: 50px;} 
+
+    .menuNav .itemsIzquierda {
+        flex-direction: column;}
+
+    .navbar-toggler { /*Esto modifica al botón*/
+        width: 7%;
+        } 
+    
+    .icono img {
+        width: 110%;}
+
+/*-----------------------------------------
+                    MAIN
+ -----------------------------------------*/
+ /*-----------------------
+          TITULO 
+ ------------------------*/
+    
+h1.titulo-querie{
+    font-size:3rem;
+    width:100%;} 
+
+h2.titulo{
+        font-size: 2rem;
+        width:100%;}
+
+/*------------------------
+           BODY
+-------------------------*/
+
+#cuerpo-main {
+    display: block;}
+
+.contenedor{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin:0px;}
+
+#contenedorMain{
+    margin-top:30px;
+    margin-bottom:150px;}
+
+.contenedorInfo{ 
+    margin-bottom:80px;
+    width:60%;
+    
+        h3 {
+           font-size: 2.5rem;}
+
+        article p{
+            margin-top:10px;
+            margin-bottom:0px;
+            font-family: 'Julius Sans One', sans-serif;
+            text-align: center;}
+  }
+
+  .contenedorInfo2{ 
+    margin-bottom:70px;
+    width:60%;}
+
+
+
+.seccion1:first-child {
+   order: 2;}
+    
+.seccion2:nth-child(2) {
+   order: 1;}    
+
+.menuNav .itemsIzquierda {
+    flex-direction: column;}
+
+/*----------------------------
+FOTO CANCHA CUBIERTA MAIN BODY
+------------------------------*/
+    
+#canchasCub{
+    
+    width:50%;
+    margin:10px 30px 80px 40px;
+
+    img{
+       width: 100%;}
+}
+
+/*---------------------------------
+FOTO CANCHAS DE POLVO DEL MAIN BODY
+----------------------------------*/
+
+#canchasPolvo{
+       width:52%;
+       margin:80px 60px 80px 70px;
+
+       img{
+          width:100%;}
+}
+
+/*--------------------------------
+FOTO IMAGEN PROFESOR DEL MAIN BODY
+---------------------------------*/
+
+    #profesoresExp{
+        
+        width:50%;
+        margin:80px 70px 60px 70px;
+    
+        img {
+            width: 100%;
+            margin-left:5px;}
+
+    }
+
+/*---------------------------
+FOTO ESCUELITA DEL MAIN BODY
+----------------------------*/
+
+    #escuelaTenis{
+        width:50%;
+        margin:10px 10px 0px 30px;
+    
+        img {
+            width: 100%;}
+    }
+
+/*-----------------------
+      ORDEN OBJETOS
+------------------------*/
+.contenedor{
+   flex-direction: column;}
+
+.seccion1:first-child {
+    order: 2;}
+
+.seccion2:nth-child(2) {
+    order: 1;}
+
+.contenedorPileta{
+    margin:10px;}           
+
+/*----------------------------------------
+                NOSOTROS
+------------------------------------------*/
+    .main-nosotros{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+            h5{
+                font-size: 2.3rem;
+                width:90%;
+                margin-left:30px;}
+
+            .lead{
+                font-size: 1rem;
+                text-align: justify;
+                padding-left:30px;
+                padding-right:30px;}
+
+            li{
+                font-size: 1rem;
+                text-align: justify;}
+
+
+    .card-body{
+        display:flex;
+        flex-direction: column;}
+
+    .card-VMV{
+        margin-top:0px;
+        margin-left:0px;
+        width:100%;
+
+            p{
+                font-size: 0.9rem;
+                width:500px;
+                color:orangered;
+                font-weight: 600;}
+    }
+
+    .card-vision{
+        
+        .img-fluid{
+            width:40%;}
+
+            p{
+                font-size: 0.9rem;
+                width:500px;
+                color:darkgreen;
+                font-weight: 600;}
+    }
+
+    .card-mision{
+        margin-bottom:0px;
+
+        .img-fluid{
+            width:25%;
+            margin-bottom:20px;}
+
+        ol{
+            width:95%;
+
+            li{
+                font-size: 0.9rem;
+                font-weight: 600;
+                color:darkblue}
+        }
+}
+
+    .card-valores{
+        margin-bottom:5px;
+        margin-top:5px;
+
+        .img-fluid{
+            width:50%;
+            margin-top:0px;
+            margin-left:70px;}
+
+        ul{
+            display:flex;
+            flex-direction: column;
+            width:115%;
+
+            li{
+                font-size: 0.9rem;
+                font-weight: 600;
+                color:darkred;}
+        }
+    }
+}
+
+/*-----------------------------------------
+                 CONTACTO
+------------------------------------------*/ 
+#main-contactanos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+ .seccion1:first-child {
+    order: 2;}
+     
+ .seccion2:nth-child(2) {
+    order: 1;}
+
+/*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
+
+div #contacto{
+    width: 100%;
+    margin-right:30px;
+    height:50vh;
+    margin-top:100px; 
+
+    h4{ 
+        width:100%;
+        font-size: 2.4rem;
+        font-weight: 1000;}
+    
+     p{
+        width:100%;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-align:center;
+        padding:20px;}
+}
+
+/*---------------------
+    ICONOS CONTACTO
+---------------------*/
+
+.iconos-contacto{
+width:70%;}
+
+
+/*--------------------
+        fieldset
+----------------------*/
+    .escribinos{
+            width:80%;
+            margin:80px 60px 30px 60px;
+            border: 1px solid black;
+            align-items: center;
+            text-align:center;
+        
+            form{
+                margin-top: 20px;
+                text-align:center;}
+                
+            .text-querie{
+            width:100%;}
+    }
+
+    #botones-formulario{
+        width:100%;}
+
+    a.enviar{
+        padding:5px;
+        width: 60%;
+        font-size:0.8rem;
+        margin-right:10px;
+        text-align: center;}
+    
+    a.limpiar{
+        padding:5px;
+        width:60%;
+        font-size:0.8rem;
+        text-align: center;}
+
+
+/*---------------------------
+        NUESTROS PROFES
+---------------------------*/
+
+    .mainQuerie{
+         display:flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         margin-top:10px;
+
+        .titulos-profes{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center; 
+            margin-left:20px;
+            margin-top:10px;
+        
+                h5{
+                  font-size: 2.5rem;}
+
+                h4{
+                  font-size: 1.3rem;}
+    
+                .profesQuerie{
+                     font-size: 1.2rem;
+                     width:95%;
+                     font-weight: 600;
+                     font-size: 1.5rem;
+                     margin-bottom:0px;
+                     padding-left:10px;}
+        }
+      
+        .col-sm-12{
+            display:flex;
+            flex-direction:column;
+            justify-content: space-evenly;
+            align-items: center;}
+
+        .card{ 
+             size: 100%;
+             min-height:200px;
+             margin-bottom: 20px;
+             width:15rem;
+ 
+            .card-img-top{
+                   width:60%;} 
+ 
+            .card-body{
+                   padding: 20px;}
+ 
+            p{
+                 font-size:0.8rem;}
+
+            h2{
+                 font-size: 1.5rem;
+                 color:yellow;}
+         
+            h6{
+                 color:white;
+                 font-weight: 600;
+                 font-size: 1rem;
+                 text-decoration: underline;}
+        }
+    }
+/*------------------------------
+            FOOTER
+-------------------------------*/
+footer {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom:10px;
+  
+    .texto-footer{    
+            font-size: 1.1rem;
+            font-weight: 600;
+            color:wheat;
+            width: 100%;
+            margin-top:20px;
+            text-align: center;}
+
+    .redes{
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-left: 30px;
+        
+        a {
+            margin-bottom:20px;
+            width: 70px;
+                    
+            img{
+                width: 70%;}
+        }
+    }
+}
+}

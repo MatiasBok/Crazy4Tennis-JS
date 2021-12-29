@@ -1,0 +1,68 @@
+/*----------------------------
+       TITULO PRINCIPAL
+----------------------------*/
+
+@mixin titulo-colores{
+    background:linear-gradient(to top,#040308,#AD4A28,#DD723C,#FC7001,#DCB697,#9BA5AE,#3E5879,#020B1A);
+}
+/*----------------------------
+           CONTACTO
+----------------------------*/
+@mixin flex-reverse{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+/*--------------
+ICONOS CONTACTO
+----------------*/
+
+@mixin hover{
+    transform: scale(1.8);
+    transition: 1.5s;
+}
+
+/*----------------------------
+          FOTOS MAIN
+----------------------------*/
+@mixin transitions{
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@mixin fotos-flex{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        position:relative;
+}
+
+/*----------------------------
+       NUESTROS PROFES
+----------------------------*/
+
+@mixin flex-around {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+/*----------------------------
+           FOOTER
+----------------------------*/
+
+@mixin hover-media{
+    transform: scale(1.5);
+    transition: 1.5s;
+}
+
+/*----------------------------
+         NOSOTROS
+----------------------------*/

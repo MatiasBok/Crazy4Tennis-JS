@@ -1,0 +1,104 @@
+.main-nosotros{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    background-color: white;
+    font-family: 'Julius Sans One', sans-serif;
+
+    h5{
+        font-size: 3rem;
+        color:rgb(241, 98, 16);
+        background-color: rgb(182, 199, 172);
+        width:100%;
+        padding:10px;
+        text-align:center;}
+
+    p{
+        color:black;
+        text-align: justify;
+        margin-left:10px;
+        margin-right:10px;
+        font-weight: 800;}
+
+    li{
+        color:black;}
+
+    .derecha{
+        display:flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;}
+
+    .izquierda{
+        display:flex;
+        justify-content: flex-start;}
+}
+
+.card{
+    border: none;}
+
+.card-VMV{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    align-items: center;
+    margin-top: 50px;
+    width:100%;
+    
+
+    p{
+        
+        margin:0px;
+        margin-bottom:5px;
+        color:orangered;
+        font-weight: 800;}
+
+    .img-fluid{
+        width:100%;}
+
+    }
+.card-vision{
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+
+    p{
+        color:darkgreen;
+        font-weight: 600;}
+        
+      .img-fluid{
+           width:100%;
+           margin-left:20px;}
+ }
+
+
+.card-mision{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items:center;
+    margin-bottom:50px;
+    text-align: justify;
+
+    li{
+        font-weight: 600;
+        color:darkblue}
+        
+         .img-fluid{
+               width:18%;
+               margin-left:50px;}
+    }
+
+.card-valores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom:50px;
+    text-align: justify;
+
+        li{
+            font-weight: 600;
+            color:darkred;}
+    
+        .img-fluid{
+             width:40%;}
+}   
+

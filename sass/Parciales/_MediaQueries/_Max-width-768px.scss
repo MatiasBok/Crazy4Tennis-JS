@@ -1,0 +1,400 @@
+/*-----------------------------------------------------
+                  MEDIA SCREEN 768px
+-----------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+
+    #cuerpo-main{
+       display: block;}
+
+/*-----------------------------------------
+                  INDEX
+-----------------------------------------*/
+
+/*------------------------
+          TITULO
+------------------------*/
+
+h1.titulo-querie{
+        font-size:4rem;
+        width:100%;} 
+
+h2.titulo{
+        font-size: 2rem;
+        width:100%;
+        padding:10px;}
+
+/*------------------------
+            MENU
+------------------------*/
+
+    .navegacion {
+        background-color:chocolate;
+        height: 50px;} 
+
+    .menuNav .itemsIzquierda {
+        flex-direction: column;}
+
+    .navbar-toggler { /*Esto modifica al botón*/
+        width: 5%;
+        } 
+    
+    .icono img {
+        width: 110%;
+        padding: 3px;}
+
+/*------------------------
+          BODY
+------------------------*/
+    body{
+        background-color: rgb(140, 253, 74);}
+
+    #contenedorMain{
+        margin-top:30px;
+        margin-bottom:150px;}
+
+    .contenedorInfo{ 
+        margin-bottom:40px;
+        width:50%;
+
+            h3 {
+                font-size: 2.5rem;}
+        
+            article p{
+                margin-top:10px;
+                margin-bottom:0px;
+                font-family: 'Julius Sans One', sans-serif;
+                text-align: center;}
+      }
+
+      .contenedorInfo2{ 
+        margin-bottom:110px;
+        width:50%;}
+    
+    .contenedor{
+       width:100%;
+       display:flex;
+       flex-direction: column;
+       justify-content: space-evenly;}
+
+    .seccion1:first-child {
+       order: 2;}
+        
+    .seccion2:nth-child(2) {
+       order: 1;}
+      
+
+/*----------------------------
+FOTO CANCHA CUBIERTA MAIN BODY
+-----------------------------*/
+
+    #canchasCub{
+        @include fotos-flex;
+        width:40%;
+        margin:80px 30px 100px 40px;
+
+        img{
+           width: 100%;}
+    }
+
+/*----------------------------------
+FOTO CANCHAS DE POLVO DEL MAIN BODY
+----------------------------------*/
+    #canchasPolvo{
+        @include fotos-flex;
+        width: 40%;
+        margin:100px 20px 90px 30px;
+
+
+        img{
+            width:100%;}
+    }
+
+/*-------------------------------------
+            ROW DE ABAJO
+---------------------------------------*/
+/*-------------------------
+    FOTO IMAGEN PROFESOR
+--------------------------*/
+
+    #profesoresExp{
+        @include fotos-flex;
+        width:40%;
+        margin:90px 10px 70px 30px;
+
+
+        img{
+           width: 100%;}
+}
+
+/*--------------------------
+FOTO ESCUELITA DEL MAIN BODY
+----------------------------*/
+
+    #escuelaTenis{
+        @include fotos-flex;
+        width:45%;
+        margin:0px 10px 10px 20px;
+
+        img{
+            width: 100%;
+            margin-right:100px;}
+}
+
+/*---------------------------
+        NUESTROS PROFES
+---------------------------*/
+
+.mainQuerie{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+
+    .titulos-profes{
+        margin-right:20px;
+        margin-left:0px;
+        margin-top:10px;
+        
+            h5{
+              font-size: 2.5rem;}
+
+            h4{
+              font-size: 1.3rem;}
+    
+            .profesQuerie{
+              width:100%;
+              font-weight: 600;
+              font-size: 1.3rem;
+              margin-bottom:0px;
+              margin-left:30px;
+              padding-right:10px;
+              text-align:center;}
+        }
+        .containerQuerie{
+            margin-left:5px;}
+
+     .card-deck{  
+        display:flex;
+        justify-content:space-around;
+        align-items:flex-start;
+        margin-right: 10px;
+        margin-left:5px;}
+ 
+     .card{ 
+         width: 110%;
+         min-height:350px;
+         margin-bottom: 50px;
+         text-align:center;
+                
+         .card-img-top{
+             width:80%;} 
+ 
+         .card-body{
+             padding: 5px;
+ 
+            p{
+             font-size:0.8rem;}
+
+            h5{
+             font-size: 1.5rem;
+             color:yellow;}
+         
+            h6{
+             color:white;
+             font-weight: 600;
+             font-size: 1rem;
+             text-decoration: underline;}
+       }
+      }
+    }
+
+/*----------------------------------------------
+                    NOSOTROS
+-----------------------------------------------*/
+.main-nosotros{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  
+      h5{
+        font-size: 2.5rem;}
+  
+      p{
+        font-size:1rem;}
+  }
+  
+.card-VMV{
+    margin-right:40px;
+    margin-left: 160px;
+    width:80%;
+
+      .img-fluid{
+         width:50%;
+         margin-left:0px;
+         margin-right: 0px;}
+  
+      p{
+        font-size: 0.8rem;
+        width: 400px;}
+}
+  
+.card-vision{
+    margin-bottom:30px;
+              
+    .img-fluid{
+         width:30%;
+         margin-left:0px;}
+  
+    p{
+         font-size:0.8rem;
+          width:550px;}
+    }
+  
+.card-mision{
+                
+    .img-fluid{
+          width:18%;
+          margin-left:50px;}
+          
+    .card-text{
+          font-size: 0.8rem;
+          width: 550px;}
+}
+        
+.card-valores{
+    padding-left:0px;   
+
+    .img-fluid{
+          width:30%;}
+  
+    .card-text{
+          font-size: 0.8rem;
+          width: 450px;}                  
+}
+  
+/*-----------------------------------------------
+                    RESERVAS
+------------------------------------------------*/
+.main-reservas { 
+    
+    section.reservas{ 
+    
+        .titulo-reservas{ 
+            font-size: 2.5rem;}
+
+        .parrafo-reservas{
+                color:rgb(235, 85, 31);
+                font-size: 1.1rem;
+                margin-left:40px;
+                margin-right:40px;}
+
+        .imagen-reservas{
+                width:70%;}
+}
+}
+/*-----------------------------------------
+                 CONTACTO
+------------------------------------------*/ 
+#main-contactanos{
+    display:flex;
+    flex-direction: row;}
+/*--------------------
+        fieldset
+----------------------*/
+ 
+.escribinos{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items:flex-start;
+        width:80%;
+        padding:15px;
+        margin:50px 110px 50px 0px;
+    
+        margin-right:10px;
+            
+    	.text-querie{
+            width:100%;}
+    }
+
+    #botones-formulario{
+        width:100%;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;}
+
+    a.enviar{
+        padding:5px;
+        width: 40%;
+        font-size:0.8rem;
+        text-align: center;}
+        
+    a.limpiar{
+        padding:5px;
+        width:50%;
+        font-size:0.8rem;
+        text-align: center;}
+      
+/*------------------------------
+        CÓMO CONTACTAR
+------------------------------*/
+  
+    div #contacto{
+        width: 100%;
+        height:50vh;
+        margin-left:20px;}
+
+    .como-contactar{ 
+        h4{
+            font-size: 1.8rem;
+            font-weight: 1000;}
+        
+         p{
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-align:center;
+            padding:30px;}
+    }
+
+.iconos-contacto{
+    width:100%;}
+
+  
+/*------------------------------
+            FOOTER
+-------------------------------*/
+    footer {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom:10px;
+      
+        .texto-footer{    
+                font-size: 1.1rem;
+                font-weight: 600;
+                color:wheat;
+                width: 100%;
+                margin-top:20px;
+                text-align: center;}
+
+        .redes{
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+            margin-left: 30px;
+            
+            a {
+                margin:0px;
+                width: 90px;
+                        
+                img{
+                    width: 60%;}
+            }
+        }
+    }
+
+}

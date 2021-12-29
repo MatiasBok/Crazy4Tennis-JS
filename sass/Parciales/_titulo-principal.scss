@@ -1,0 +1,29 @@
+/*----------------------------------------------------
+         BLOQUE del título principal en HOME
+-----------------------------------------------------*/
+
+header h1{
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+    font-size:7rem;
+    font-weight:500;
+    width:100%;
+    color:rgba(255, 251, 0, 0.87);
+    @include titulo-colores;;
+    margin:0px;
+    padding:30px;
+} 
+
+/*----------------------------------------------------
+         TITULO PRINCIPAL EN OTRAS PAGINAS
+-----------------------------------------------------*/
+
+    h2.titulo{
+        margin:0px;
+        width:100%;
+        font-family: 'Julius Sans One', sans-serif;
+        font-size:5rem;
+        font-weight:500;
+        line-height: 2;
+        color:rgb(233, 248, 17);
+        @include titulo-colores;}

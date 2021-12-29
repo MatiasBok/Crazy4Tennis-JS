@@ -1,0 +1,113 @@
+/*----------------------------------------------------
+        FOTO CANCHAS DE POLVO DEL MAIN BODY
+-----------------------------------------------------*/
+
+#canchasPolvo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    width:30%;
+    margin:100px 0px 0px 25px;
+
+
+    img {    
+        @include transitions;
+        width:100%;}
+
+      p {
+          text-align:center;
+          font-family: 'Julius Sans One', sans-serif;
+          font-weight: bold;
+          color:red;
+          font-size:2rem;}
+  }
+
+  #canchasPolvo img.top:hover {
+                      opacity:0.4;}
+
+/*----------------------------------------------------
+            FOTO CANCHA CUBIERTA MAIN BODY
+-----------------------------------------------------*/
+
+#canchasCub{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    width:26%;
+    margin:100px 30px 20px 20px;
+
+
+    img {
+        @include transitions;
+        width:100%;
+      }
+
+      p {
+          text-align:center;
+          font-family: 'Julius Sans One', sans-serif;
+          font-weight: bold;
+          color:red;
+          font-size:2rem;}
+}
+
+  #canchasCub img.top:hover {
+                      opacity:0.4;}
+  
+/*----------------------------------------------------
+         FOTO IMAGEN PROFESOR DEL MAIN BODY
+-----------------------------------------------------*/
+
+#profesoresExp{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    width:27%;
+    margin:50px 30px 40px 50px;
+
+
+    img {
+        @include transitions;
+        width: 100%;}
+
+    p {
+      text-align:center;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      color:red;
+      font-size:2rem;}
+}
+
+  #profesoresExp img.top:hover {
+                        opacity:0.4;}
+
+/*----------------------------------------------------
+            FOTO ESCUELITA DEL MAIN BODY
+-----------------------------------------------------*/
+
+#escuelaTenis{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    width:30%;
+    margin:50px 0px 40px 45px;
+
+
+    img {
+        width: 88%;
+        @include transitions;}
+
+    p {
+      text-align:center;
+      font-family: 'Julius Sans One', sans-serif;
+      font-weight: bold;
+      color:red;
+      font-size:2rem;}
+  }
+
+  #escuelaTenis img.top:hover {
+                    opacity:0.4;}
+

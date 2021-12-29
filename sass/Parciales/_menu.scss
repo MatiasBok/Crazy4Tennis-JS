@@ -1,0 +1,49 @@
+/*---------------------------------------------------
+                        MENU
+-----------------------------------------------------*/
+.navegacion {
+    background-color:chocolate;} 
+    
+    .menuNav {
+        width:100%;
+        justify-content:space-between;
+    }
+    
+    .menuNav .itemsIzquierda{
+        display:flex;
+    }
+    
+        
+    #navbarNavDropdown{
+        background-color: rgb(233, 115, 31);
+        width:100%;
+        opacity: 0.8;}
+        
+    .navegacion .menuNav .nav-link { 
+        color:yellow;
+        font-weight: 800;
+        font-family: 'Julius Sans One', sans-serif;
+        margin-left:20px;}
+    
+
+    .contacto{
+        text-decoration: none;}
+        
+/*----------------------------------------------------
+                    MENU HAMBURGUESA
+-----------------------------------------------------*/
+
+    .navbar-toggler { /*Esto modifica al botón*/
+        border:none;
+        margin:0px;
+        padding:0px;
+        width: 5%;;
+    }
+    
+    .navbar-toggler:focus { 
+        box-shadow: none;
+    }
+    
+    .icono img {
+        width: 140%;
+        padding: 5px;}

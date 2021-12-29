@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre":"Lorena",
+        "experiencia":"Entrenadora PTR (2013) y profesora nacional de educación física (2015).",
+        "diasDisponibles":"Viernes, sábados y domingos",
+        "horariosDisponibles":"8 a 14hs",
+        "img":"Lorena.jpg"
+    },
+    {
+        "id": 2,
+        "nombre":"Francisco",
+        "experiencia":"Entrenador PTR (2010) y estudiante del profesorado de Educación Física.",
+        "diasDisponibles":"Lunes a viernes",
+        "horariosDisponibles":"13 a 22hs",
+        "img":"Francisco.jpg"
+    },
+    {
+        "id": 3,
+        "nombre":"Milagros",
+        "experiencia":"Entrenadora Nacional (2006)",
+        "diasDisponibles":"Lunes, miércoles, viernes y sábados",
+        "horariosDisponibles":"8 a 14hs",
+        "img":"Milagros.jpg"
+    },
+    {
+        "id": 4,
+        "nombre":"Juan",
+        "experiencia":"Entrenador Nacional (2009)",
+        "diasDisponibles":"Lunes a viernes",
+        "horariosDisponibles":"14 a 20hs",
+        "img":"Juan.jpg"
+    }, 
+    {
+        "id": 5,
+        "nombre":"Sofia",
+        "experiencia":"Entrenadora Nacional (2006)",
+        "diasDisponibles":"Lunes, miércoles y viernes",
+        "horariosDisponibles":"10 a 20hs",
+        "img":"Sofia.jpg"
+    }, 
+    {
+        "id": 6,
+        "nombre":"Matias",
+        "experiencia":"Entrenador Nacional (2003)",
+        "diasDisponibles":"Lunes a viernes",
+        "horariosDisponibles":"13 a 22hs",
+        "img":"Matias.jpg"
+    }
+]

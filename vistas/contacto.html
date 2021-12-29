@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactanos para reservar una cancha o una clase">
+    <meta name="keywords" content="Contacto, escribinos, reservar">
+    <link rel="shortcut icon" href="../assets/tennis(1).png"type=image/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h2 class="titulo">Crazy4Tennis</h2>
+        <!--Menu de navegacion-->
+        <nav class="navbar navbar-expand-lg navbar-light bg navegacion">
+            <div class="container-fluid">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <!-- <span class=""></span> -->
+                    <span class="icono"><img src="../assets/sports_tennis_white_24dp.svg" alt="icono principal del menú"/></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav menuNav">
+                        <div class="itemsIzquierda">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nuestrosProfes.html">Nuestros profes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./reservas.html">Reservas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </div>
+                        <div>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./ingresar.html">Ingresar</a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="main-contactanos">
+            <form action="#" method="#"></form>
+            <fieldset class="escribinos seccion2">
+                <legend>Escribinos</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="info-personal" placeholder="Su Nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="info-personal" placeholder="Su Apellido">
+                <label for="email">Su Email</label>
+                <input type="text" name="info-personal" placeholder="Su Email">
+                <label for="teléfono">Teléfono celular</label>
+                <input type="number" name="info-personal" placeholder="Teléfono celular">
+                <label for="Respuesta">Quiero mi respuesta por:</label>
+                <select name="Respuesta">
+                    <option value= ""></option>
+                    <option value= "Whatsapp">Whatsapp</option>
+                    <option value= "Telegram">Telegram</option>
+                    <option value= "Email">Email</option>
+                </select>
+                <form>       
+                    <div>Deseas recibir el Newsletter? <input type="checkbox" name="acepta" value="1"/><br><br></div> 
+                    <textarea name="Comentarios" cols="50" rows="10" class="text-querie" placeholder= "Deja aquí tus comentarios"></textarea><br><br>
+                    <div id="botones-formulario">
+                        <a class="enviar" href="#">Enviar formulario</a>
+                        <a class="limpiar" href="#">Limpiar formulario</a>
+                    </div>
+                </form>
+            </fieldset>   
+            <div id="contacto" class="seccion1">
+                <section class="como-contactar">
+                    <h4>Tenes muchas maneras de contactar con nosotros!!!</h4>
+                    <p>Podés escribirnos desde nuestra página y elegir el canal por el que te responderemos, o comunicarte con nosotros directamente por: </p>
+                </section>
+                <section class="iconos-contacto"> <!--Para los logos de las redes sociales-->
+                    <a title="Whatsapp" href="https://www.whatsapp.com/" target="_blank"><img src="../assets/whatsapp.png" class="Icono Whatsapp" alt="Icono Whatsapp"></a>
+                    <a title= "Telegram" href="https://telegram.org/" target="_blank"><img src="../assets/telegram.png" class="Icono Telegram" alt="Icono Telegram"></a>
+                    <a title="Outlook" href="https://outlook.live.com/" target="_blank"><img src="../assets/email.png" class="Icono Email" alt="Icono Email"></a>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section class="texto-footer">
+            <p>Te dejamos nuestras redes sociales para seguir comunicados.</p>
+            <p>Enterate de nuestras novedades al momento!</p>
+        </section>
+        <section class="redes"> <!--Para los logos de las redes sociales-->
+            <a title="Facebook" href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png"  class="Facebook" alt="Facebook"></a>
+            <a title="Instagram" href="https://www.instagram.com" target="_blank"> <img src="../assets/instagram.png" class="Instagram" alt="Instagram"></a>
+            <a title="Twitter" href="https://twitter.com/" target="_blank"><img src="../assets/twitter.png" class="Twitter" alt="Twitter"></a> 
+            <a title="YouTube" href="https://www.youtube.com/" target="_blank"><img src="../assets/youtube.png" class="Youtube" alt="Youtube"></a>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>

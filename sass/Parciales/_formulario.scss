@@ -1,0 +1,31 @@
+#botones-formulario{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;}
+
+.enviar{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    border:1px solid black;
+    padding:5px;
+    background:white;
+    transition:all 0.3s ease 0s;}
+
+.enviar:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(38deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 47%, rgba(252,182,69,1) 100%);}
+
+.limpiar{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    border:1px solid black;
+    padding:5px;
+    background:white;
+    transition:all 0.3s ease 0s;}
+
+.limpiar:hover {
+    background: rgb(131,58,180);
+    background: linear-gradient(324deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 47%, rgba(252,182,69,1) 100%);}
