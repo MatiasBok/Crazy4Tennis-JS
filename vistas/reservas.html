@@ -61,7 +61,7 @@
         <section class="reservas">
             <h3 class="titulo-reservas"> A partir de ahora podrás crear un usuario y reservar una cancha y/o clase!!!</h3>
             <div class= "container">
-                <form  class="row g-3 needs-validation" id="crearUsuario">
+                <form  class="row g-3 needs-validation" id="crearUsuario" onsubmit="verificarContraseñas(); return false">
                     
                     <div class="col-md-4">
                       <label for="nombre" class="form-label">Nombre(s)</label>
@@ -202,10 +202,10 @@
                       <label for="contraseña" class="form-label">Contraseña</label>
                       <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" name="contraseña" required>
                       <span class="invalid-feedback" id="faltaContraseña">
-                        Por favor indique una contraseña.
+                        Por favor, indique una contraseña.
                       </span>
                       <span class="invalid-feedback" id="errorContraseña">
-                        Por favor indique una contraseña válida. 
+                        Por favor, indique una contraseña válida. 
                       </span>
                       <div>
                         <p>La contraseña debe contener:</p>
@@ -221,13 +221,15 @@
                     <div class="col-md-4">
                       <label for="repeatConstraseña" class="form-label">Repetir contraseña</label>
                       <input type="password" class="form-control" id="repeatContraseña" placeholder="Repetir contraseña" name="repeatContraseña"required>
-                      <span class="invalid-feedback" id="faltaRepeatContraseña">
-                        Por favor repita la contraseña.
+                      <span class="alert alert-danger ocultar" id="error" role="alert">
+                        Las contraseñas no coinciden, vuelva a intentarlo!
                       </span> 
-                      <span class="invalid-feedback" id="errorRepeatContraseña">
-                        Por favor indique una contraseña válida. 
+                      <span class="alert alert-success ocultar" id="ok" role="alert">
+                        Las contraseñas coinciden! (Procesando formulario ... )
                       </span>
                     </div>
+
+
             
                     <div class="col-12">
                       <div class="form-check">

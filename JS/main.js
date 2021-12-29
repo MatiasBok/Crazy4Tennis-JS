@@ -256,7 +256,7 @@ if(BtnForm){
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     }
   const usuarioValido = nombreDeUsuario => {
-    return /^[a-z0-9_-] {5,10}$/.test(nombreDeUsuario);
+    return /^[a-z0-9_-]{5,10}$/.test(nombreDeUsuario);
     }
   const mobilValido = mobil => {
     return /^[0-9]{10}$/.test(mobil);
@@ -296,6 +296,41 @@ document.getElementById ("ButtonFormSubmit").addEventListener('click',() => {
   })
 })
 
+function verificarContraseñas() {
+ 
+  contraseña = document.getElementById('contraseña');
+  repeatContraseña = document.getElementById('repeatContraseña');
+
+  // Verificamos si las constraseñas no coinciden
+  if (contraseña.value != repeatContraseña.value) {
+ 
+  // Si las constraseñas no coinciden mostramos un mensaje
+  document.getElementById("error").classList.add("mostrar");
+
+  return false;
+
+} 
+
+else {
+ 
+  // Si las contraseñas coinciden ocultamos el mensaje de error
+  document.getElementById("error").classList.add("ocultar");
+
+  // Mostramos un mensaje mencionando que las Contraseñas coinciden 
+  document.getElementById("ok").classList.add("mostrar");
+
+  // Desabilitamos el botón de submit
+  document.getElementById("ButtonFormSubmit").disabled = true;
+
+  // Refrescamos la página (Simulación de envío del formulario) 
+  setTimeout(function() {
+      location.reload();
+  }, 3000);
+
+  return true;
+}
+}  
+
 
 /**********VALIDACIÓN DE FORMULARIO DE INGRESO**********/
 
@@ -323,5 +358,3 @@ function validate() {
   }
 }
       
-        
-         
