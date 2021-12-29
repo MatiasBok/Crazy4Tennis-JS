@@ -66,36 +66,36 @@
                     <div class="col-md-4">
                       <label for="nombre" class="form-label">Nombre(s)</label>
                       <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" required> 
-                      <div class="invalid-feedback" id="faltaNombre">
+                      <span class="invalid-feedback" id="faltaNombre">
                         Por favor, indique un nombre.
-                      </div>
+                      </span>
                     </div>
             
                     <div class="col-md-4">
                       <label for="apellido" class="form-label">Apellido</label>
                       <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido" required>
-                      <div class="invalid-feedback" id="faltaApellido">
+                      <span class="invalid-feedback" id="faltaApellido">
                         Por favor, indique un apellido.
-                      </div>
+                      </span>
                     </div>
             
                     <div class="col-md-3">
                       <label for="numeroDeDocumento" class="form-label">Número de documento</label>
                       <input type="text" class="form-control" id="numeroDeDocumento" placeholder="Numero de documento" name="numeroDeDocumento" required>
-                      <div class="invalid-feedback" id="faltaDocumento">
+                      <span class="invalid-feedback" id="faltaDocumento">
                         Por favor, indique un número de documento.
-                      </div>
+                      </span>
                     </div>
             
                     <div class="col-md-4">
                       <label for="email" class="form-label">Email</label>
                       <input type="text" class="form-control" id="email" placeholder="Email" name="email" required>
-                      <div class="invalid-feedback" id="faltaEmail">
+                      <span class="invalid-feedback" id="faltaEmail">
                         Por favor, indique un email.
-                      </div>
-                      <div class="invalid-feedback" id="errorEmail">
+                      </span>
+                      <span class="invalid-feedback" id="errorEmail">
                         Por favor, indique un email válido.
-                      </div>
+                      </span>
                     </div>
             
                     <div class="col-md-4">
@@ -106,9 +106,9 @@
                         <div class="invalid-feedback" id="faltaNombreDeUsuario">
                           Por favor, indique un nombre de usuario.
                         </div>
-                        <div class="invalid-feedback" id="errorNombreDeUsuario">
+                        <span class="invalid-feedback" id="errorNombreDeUsuario">
                           Por favor, indique un nombre de usuario válido.
-                        </div>
+                        </span>
                       </div>
                     </div>
             
@@ -121,17 +121,17 @@
                               <option value= "noBinario">No binario</option>
                               <option value= "prefieroNoDecir">Prefiero no indicar</option>
                       </select>
-                      <div class="invalid-feedback" id="faltaSexo">
+                      <span class="invalid-feedback" id="faltaSexo">
                         Por favor, seleccione el sexo con el cuál usted se identifica.
-                      </div>
+                      </span>
                     </div>                     
             
                       <div class="col-md-4">
                         <label for="fechaDeNacimiento" class="form-label">Fecha de Nacimiento (dd/mm/aaaa) </label>
                         <input type="text" class="form-control" id="fechaDeNacimiento" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" name="fechaDeNacimiento" required>
-                          <div class="invalid-feedback" id="faltaFechaDeNacimiento">
+                          <span class="invalid-feedback" id="faltaFechaDeNacimiento">
                             Por favor, indique su fecha de nacimiento.
-                          </div>
+                          </span>
                       </div>
             
                       <div class="col-md-4">
@@ -140,17 +140,17 @@
                         <div class="invalid-feedback" id="faltaMobil">
                           Por favor, indique un número de teléfono móbil.
                         </div> 
-                        <div class="invalid-feedback" id="errorMobil">
+                        <span class="invalid-feedback" id="errorMobil">
                           Por favor, indique un número de teléfono móbil válido.
-                        </div> 
+                        </span> 
                       </div>
             
                       <div class="col-md-6">
                         <label for="ciudad" class="form-label">Ciudad</label>
                         <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" name="ciudad" required>
-                        <div class="invalid-feedback" id="faltaCiudad">
+                        <span class="invalid-feedback" id="faltaCiudad">
                           Por favor, indique su ciudad.
-                        </div> 
+                        </span> 
                       </div>
                       
             
@@ -183,30 +183,30 @@
                             <option value="Tierra del Fuego">Tierra del Fuego</option>
                             <option value="Tucuman">Tucumán</option>
                       </select>
-                      <div class="invalid-feedback" id="faltaProvincia">
+                      <span class="invalid-feedback" id="faltaProvincia">
                         Por favor, seleccione una Provincia.
-                      </div> 
+                      </span> 
                     </div>
                     
             
                     <div class="col-md-3">
                       <label for="codigoPostal" class="form-label">Código Postal</label>
                       <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal" name="codigoPostal" required>
-                      <div class="invalid-feedback" id="faltaCodigoPostal">
+                      <span class="invalid-feedback" id="faltaCodigoPostal">
                         Por favor, seleccione una Provincia.
-                      </div> 
+                      </span> 
                     </div>
                     
             
                     <div class="col-md-4">
                       <label for="contraseña" class="form-label">Contraseña</label>
                       <input type="password" class="form-control" id="contraseña" placeholder="Contraseña" name="contraseña" required>
-                      <div class="invalid-feedback" id="faltaContraseña">
+                      <span class="invalid-feedback" id="faltaContraseña">
                         Por favor indique una contraseña.
-                      </div>
-                      <div class="invalid-feedback" id="errorContraseña">
+                      </span>
+                      <span class="invalid-feedback" id="errorContraseña">
                         Por favor indique una contraseña válida. 
-                      </div>
+                      </span>
                       <div>
                         <p>La contraseña debe contener:</p>
                         <ul>
@@ -221,12 +221,12 @@
                     <div class="col-md-4">
                       <label for="repeatConstraseña" class="form-label">Repetir contraseña</label>
                       <input type="password" class="form-control" id="repeatContraseña" placeholder="Repetir contraseña" name="repeatContraseña"required>
-                      <div class="invalid-feedback" id="faltaRepeatContraseña">
+                      <span class="invalid-feedback" id="faltaRepeatContraseña">
                         Por favor repita la contraseña.
-                      </div> 
-                      <div class="invalid-feedback" id="errorRepeatContraseña">
+                      </span> 
+                      <span class="invalid-feedback" id="errorRepeatContraseña">
                         Por favor indique una contraseña válida. 
-                      </div>
+                      </span>
                     </div>
             
                     <div class="col-12">
@@ -235,9 +235,9 @@
                         <label class="form-check-label" for="invalidCheck">
                           Acepta los términos y condiciones.
                         </label>
-                        <div class="invalid-feedback" id="faltaAceptar">
+                        <span class="invalid-feedback" id="faltaAceptar">
                           Debe aceptar los términos y condiciones antes de enviar. 
-                        </div>
+                        </span>
                       </div>
                     </div>
             
