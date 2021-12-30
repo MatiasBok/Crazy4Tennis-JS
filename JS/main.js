@@ -138,14 +138,6 @@ if(BtnForm){
       $('#faltaNombreDeUsuario').hide();
       nombreDeUsuario.focus();
     }
-    if (!usuarioValido(nombreDeUsuario.value)){
-      $("#errorNombreDeUsuario").show();
-      nombreDeUsuario.focus();  
-      return false;
-    }else{
-      $('#errorNombreDeUsuario').hide();
-      nombreDeUsuario.focus();
-    }
 
     if(sexo.value === ""){
       $('#faltaSexo').show();
@@ -241,22 +233,19 @@ if(BtnForm){
       repeatContraseña.focus();
     }
     
-    if(invalidCheck.value === ""){
+    if(Check.value === ""){
       $('#faltaAceptar').show();
-      invalidCheck.focus();
+      Check.focus();
       return false;
     }else{
       $('#faltaAceptar').hide();
-      invalidCheck.focus();
+      Check.focus();
     }
     return true;
   }
 
   const emailValido = email => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
-  const usuarioValido = nombreDeUsuario => {
-    return /^[a-z0-9_-] {5,10}$/.test(nombreDeUsuario);
     }
   const mobilValido = mobil => {
     return /^[0-9]{10}$/.test(mobil);
@@ -269,9 +258,30 @@ if(BtnForm){
     }
   
   BtnForm.addEventListener("click", validacion);
+
+
+    function getData() {
+      datos = document.getElementById("cajaUsuario")
+      nombre = "<h1>" + document.crearUsuario.nombre.value + "</h1>"
+      apellido = "<h2>" + document.crearUsuario.apellido.value + "</h2>"
+      documento = "<p>" + document.crearUsuario.numeroDeDocumento.value + "</p>"
+      email = "<p>" + document.crearUsuario.email.value + "</p>";
+      usuario = "<p>" + document.crearUsuario.nombreDeUsuario.value + "</p>"
+      sexo = "<p>" + document.crearUsuario.sexo.value + "</p>"
+      Nacimiento = "<p>" + document.crearUsuario.fechaDeNacimiento.value + "</p>"
+      mobil = "<p>" + document.crearUsuario.mobil.value + "</p>"
+      ciudad = "<p>" + document.crearUsuario.ciudad.value + "</p>"
+      provincia = "<p>" + document.crearUsuario.provincia.value + "</p>"
+      codigoPostal = "<p>" + document.crearUsuario.codigoPostal.value + "</p>"
+      crearUsuario.innerHTML = nombre + apellido + documento + email + usuario + sexo + Nacimiento + mobil + ciudad + provincia + codigoPostal 
+    }
+
+    window.onload = function() {
+    document.crearUsuario.ver.onclick = getData
+    } 
 }
 
-document.getElementById ("ButtonFormSubmit").addEventListener('click',() => {
+/*document.getElementById ("ButtonFormSubmit").addEventListener('click',() => {
   fetch ("")
   then (response => response.json())
   then(data=> {
@@ -294,7 +304,7 @@ document.getElementById ("ButtonFormSubmit").addEventListener('click',() => {
     `
     ).join(" ")
   })
-})
+})*/
 
 
 /**********VALIDACIÓN DE FORMULARIO DE INGRESO**********/
