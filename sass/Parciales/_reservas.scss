@@ -1,5 +1,5 @@
 .main-reservas{
-    background-color: white;
+    background-color: rgb(115, 255, 102);
 
         section.reservas{
                 display:flex;
@@ -22,16 +22,25 @@
                     
                 }
 
-    }        
+    }
+    
+    span.input-group-text{
+        margin-top:6px;
+        width:10%;
+        height:10%;
+    }    
+
+    #nuevoUsuario{
+        width:100%;
+    }
 } 
 
-.ocultar {
-    display: none;
-}
- 
-.mostrar {
-    display: block;
-}
+
+    
+    
+
+
+
 
 
 

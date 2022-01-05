@@ -1,0 +1,28 @@
+container{
+    
+    div .containerFormRes{
+        width: 80%;
+        background-color: orange;
+    }
+    
+}
+
+.cardFormulario{
+    margin-left:300px;
+    margin-top:50px;
+
+    .cardFormRes{
+        background-color: orange;
+        
+        h4{
+            font-size: 3rem;
+            color:yellow;
+            margin: 10px;
+        }
+
+        .titSecc{
+            color:rgb(180, 9, 9); 
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -61,7 +61,7 @@
         <section class="reservas">
             <h3 class="titulo-reservas"> A partir de ahora podrás crear un usuario y reservar una cancha y/o clase!!!</h3>
             <div class= "container">
-                <form  class="row g-3 needs-validation" id="crearUsuario" onsubmit="verificarContraseñas(); return false">
+                <form  class="row g-3 needs-validation" id="crearUsuario">
                     
                     <div class="col-md-4">
                       <label for="nombre" class="form-label">Nombre(s)</label>
@@ -193,7 +193,7 @@
                       <label for="codigoPostal" class="form-label">Código Postal</label>
                       <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal" name="codigoPostal" required>
                       <span class="invalid-feedback" id="faltaCodigoPostal">
-                        Por favor, seleccione una Provincia.
+                        Por favor, ingrese un código postal.
                       </span> 
                     </div>
                     
@@ -221,10 +221,10 @@
                     <div class="col-md-4">
                       <label for="repeatConstraseña" class="form-label">Repetir contraseña</label>
                       <input type="password" class="form-control" id="repeatContraseña" placeholder="Repetir contraseña" name="repeatContraseña"required>
-                      <span class="alert alert-danger ocultar" id="error" role="alert">
+                      <span style="display: none" class="alert alert-danger" id="error" role="alert">
                         Las contraseñas no coinciden, vuelva a intentarlo!
                       </span> 
-                      <span class="alert alert-success ocultar" id="ok" role="alert">
+                      <span style="display: none" class="alert alert-success" id="ok" role="alert">
                         Las contraseñas coinciden! (Procesando formulario ... )
                       </span>
                     </div>
@@ -246,10 +246,11 @@
                     <div class="col-12">
                       <button type="submit" id="ButtonFormSubmit" class="btn btn-primary" >Enviar formulario</button>
                     </div>
-                    <div id="nuevoUsuario"></div>
                   </form>
-                </div>               
-    </main>
+                </div>
+                <div id="nuevoUsuario"></div>     
+                
+</main>
 
     <footer>
         <section class="texto-footer">
